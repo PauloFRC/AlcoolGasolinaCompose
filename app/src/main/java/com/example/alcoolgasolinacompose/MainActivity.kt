@@ -129,7 +129,7 @@ fun MainScreen(name: String) {
                     text = "Gasolina ou Álcool?",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.Red,
+                    color = Color.Black,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
                 TextField(
@@ -155,6 +155,7 @@ fun MainScreen(name: String) {
                 Text(
                     text = "Rentabilidade álcool",
                     fontSize = 16.sp,
+                    color = Color.Black,
                     modifier = Modifier.padding(bottom = 2.dp)
                 )
                 Row(
@@ -166,7 +167,8 @@ fun MainScreen(name: String) {
                     Text(
                         text = "75%",
                         fontSize = 14.sp,
-                        modifier = Modifier.padding(end = 12.dp)
+                        color = Color.Black,
+                        modifier = Modifier.padding(end = 12.dp),
                     )
                     Switch(
                         checked = checked,
@@ -179,14 +181,6 @@ fun MainScreen(name: String) {
                             uncheckedTrackColor = Color.LightGray
                         )
                     )
-                }
-                Button(
-                    onClick = { },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.Red
-                    )
-                ) {
-                    Text("CALCULAR")
                 }
             }
         }
